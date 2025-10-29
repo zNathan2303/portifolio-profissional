@@ -34,6 +34,11 @@ body {
     font-size: 0.9rem;
 }
 
+p,
+li {
+    line-height: 20px;
+}
+
 p span,
 li span {
     color: var(--highlight-text-color);
@@ -73,6 +78,7 @@ header img {
     width: 200px;
     border-radius: 10px;
     margin-top: 10px;
+    box-shadow: var(--default-shadow);
 }
 
 h1 {
@@ -83,7 +89,6 @@ h1 {
 
 header p:nth-child(4) {
     padding: 0 20px;
-    line-height: 20px;
     text-align: justify;
 }
 
@@ -149,5 +154,58 @@ ul {
 ul li {
     text-align: center;
     list-style: inside;
-    line-height: 20px;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+
+.projetos .projeto {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    border-bottom: var(--default-dividing-line);
+    padding-bottom: 30px;
+}
+
+.projetos .projeto img {
+    max-width: 320px;
+    max-height: 175px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: var(--default-shadow);
+}
+
+.projetos .projeto ul {
+    align-items: start;
+}
+
+.projetos .projeto .ferramentas {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.projetos .projeto a {
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--highlight-color);
+    width: 110px;
+    height: 35px;
+    border-radius: 4px;
+    color: var(--highlight-color);
+    font-size: 12px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.projetos .projeto a:hover {
+    background-color: var(--highlight-color);
+    color: white;
 }
