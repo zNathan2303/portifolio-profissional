@@ -1,6 +1,9 @@
 :root {
-    --default-text-color: rgb(120, 120, 120);
+    --default-text-color: rgb(100, 100, 100);
     --highlight-text-color: rgb(70, 70, 70);
+    --default-dividing-line: 1.5px solid rgb(200, 200, 200);
+    --highlight-color: #1E90FF;
+    --default-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -31,9 +34,10 @@ body {
     font-size: 0.9rem;
 }
 
-p span {
+p span,
+li span {
     color: var(--highlight-text-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 header {
@@ -41,8 +45,10 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-bottom: 1.5px solid rgb(202, 202, 202);
+    border-bottom: var(--default-dividing-line);
     gap: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
 }
 
 header .linha-portifolio {
@@ -56,7 +62,7 @@ header .linha-portifolio p {
 }
 
 header .barra-topo {
-    background-color: #1E90FF;
+    background-color: var(--highlight-color);
     height: 4px;
     width: 100%;
 }
@@ -77,8 +83,71 @@ h1 {
 
 header p:nth-child(4) {
     padding: 0 20px;
-    padding-bottom: 20px;
     line-height: 20px;
-    margin-bottom: 10px;
     text-align: justify;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+    border-bottom: var(--default-dividing-line);
+}
+
+.habilidades .area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+.habilidades .area .icon {
+    height: 50px;
+    width: 50px;
+    box-shadow: var(--default-shadow);
+    padding: 10px;
+    margin: 15px;
+    margin-top: 35px;
+    border-radius: 6px;
+    transform: rotate(-45deg);
+}
+
+.habilidades .area .icon svg {
+    transform: rotate(45deg);
+    color: var(--highlight-color);
+}
+
+.linha-titulo-secao {
+    width: min-content;
+}
+
+.linha-titulo-secao .linha {
+    background-color: var(--highlight-color);
+    height: 2px;
+    width: 120%;
+    margin-top: 5px;
+}
+
+h2 {
+    padding-left: 5px;
+    font-size: 1.25rem;
+    color: var(--highlight-text-color);
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--highlight-text-color);
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul li {
+    text-align: center;
+    list-style: inside;
+    line-height: 20px;
 }
