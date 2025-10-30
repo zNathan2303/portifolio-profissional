@@ -226,3 +226,42 @@ ul li {
     flex-direction: column;
     gap: 15px;
 }
+
+footer {
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-bottom: 30px;
+}
+
+.contatos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contato {
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+footer .linha-divisoria {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+}
+
+.contato .icon {
+    color: var(--highlight-color);
+}
+
+.contato a {
+    font-size: 12px;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--highlight-color);
+    text-underline-offset: 4px;
+}
