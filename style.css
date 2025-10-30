@@ -164,8 +164,6 @@ ul li {
     margin-top: 30px;
 }
 
-
-
 .projetos .projeto {
     display: flex;
     flex-direction: column;
@@ -185,6 +183,7 @@ ul li {
     object-fit: cover;
     border-radius: 10px;
     box-shadow: var(--default-shadow);
+    align-self: center;
 }
 
 .projetos .projeto ul {
@@ -264,4 +263,145 @@ footer .linha-divisoria {
     text-decoration-style: dotted;
     text-decoration-color: var(--highlight-color);
     text-underline-offset: 4px;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: 60px;
+        margin-top: 60px;
+        font-size: 1.2rem;
+    }
+
+    header {
+        gap: 30px;
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+    }
+
+    header .barra-topo {
+        margin-top: 12px;
+    }
+
+    header img {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    header p:nth-child(4) {
+        padding: 0;
+        text-align: center;
+    }
+
+    section {
+        gap: 50px;
+        padding-bottom: 50px;
+    }
+
+    .habilidades .area {
+        display: grid;
+        grid-template-areas:
+            "icon titulo"
+            "icon descricao";
+        grid-template-columns: 130px 1fr;
+        grid-template-rows: 20px 1fr;
+        gap: 14px;
+        font-size: 14px;
+    }
+
+    .habilidades .area .icon {
+        min-height: 75px;
+        min-width: 75px;
+        margin: 10px;
+        grid-area: icon;
+    }
+
+    .habilidades .area h3 {
+        grid-area: titulo;
+    }
+
+    .habilidades .area ul {
+        grid-area: descricao;
+    }
+
+    .linha-titulo-secao {
+        width: min-content;
+    }
+
+    .linha-titulo-secao .linha {
+        background-color: var(--highlight-color);
+        height: 3px;
+        width: 120%;
+        margin-top: 8px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    ul {
+        margin-left: 16px;
+        align-items: start;
+    }
+
+    ul li {
+        text-align: start;
+        list-style: disc;
+    }
+
+    .projetos {
+        display: grid;
+        grid-template-areas:
+            "titulo titulo titulo"
+            "projeto1 linha-divisoria projeto2";
+        grid-template-columns: 1fr 0.5px 1fr;
+        grid-template-rows: 50px 1fr;
+        gap: 30px;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .projetos .linha-titulo-secao {
+        grid-area: titulo;
+    }
+
+    .projetos:nth-child(1) {
+        grid-area: projeto1;
+    }
+
+    .projetos:nth-child(2) {
+        grid-area: projeto2;
+    }
+
+    .projetos .linha-divisoria {
+        height: 100%;
+        background-color: rgb(200, 200, 200);
+    }
+
+    .projetos .projeto {
+        border-bottom: none;
+        font-size: 16px;
+    }
+
+    .projetos .projeto:last-child {
+        padding-bottom: 30px;
+    }
+
+    .projetos .projeto img {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .contato a {
+        font-size: 1rem;
+        text-underline-offset: 6px;
+    }
 }
