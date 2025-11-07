@@ -6,18 +6,15 @@
 ![preview do site](./img/preview-site.png)
 Captura de tela do topo do site.
 
-## Navegação
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Visualizando o Projeto](#visualizando-o-projeto)
-- [Autor](#autor)
-
 ## Sobre o Projeto
-Portifólio responsivo que mostra informações sobre mim para me apresentar ao mercado de trabalho. Foi construído usando HTML e CSS. Feito como atividade da matéria de Projeto de Software do SENAI.
+Portifólio responsivo que mostra informações sobre mim para me apresentar ao mercado de trabalho. Foi planejando com a criação de uma TAP (Termo de Abertura de Projeto) e construído usando HTML e CSS. Feito como atividade da matéria de Projeto de Software do SENAI.
 
 ## Tecnologias Utilizadas
 - HTML
 - CSS
+- GitHub Projects
+- GitHub Wiki
+- GitHub Pages
 
 ## Visualizando o Projeto
 O projeto pode ser visualizado [aqui](https://znathan2303.github.io/portifolio-profissional/).
