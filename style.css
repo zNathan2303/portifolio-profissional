@@ -441,6 +441,10 @@ footer .linha-divisoria {
         margin-top: 50px;
     }
 
+    header h1 {
+        margin-left: 40px;
+    }
+
     header img,
     header>p {
         margin-bottom: 50px;
